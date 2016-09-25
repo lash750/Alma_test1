@@ -1,22 +1,20 @@
 body{
-	background: url(img/bg-body.png) no-repeat cover black;
 }
 
 *{
-	margin: 0;
-	padding: 0
+  margin: 0;
+  padding: 0;
 }
 
 
 
 /*стиль для рейтинга*/
-#Stars input:checked ~ label, #Stars label, #Stars label:hover, #Stars label:hover ~ label {
+.Stars input:checked ~ label, .Stars label, .Stars label:hover, .Stars label:hover ~ label {
   background: url(img/star-deselect.png) no-repeat;
-   
 }
-#Stars {
-  
-  /*fix floating problems*/
+
+.Stars {
+/*fix floating problems*/
   overflow: hidden;
   zoom: 1;
   /*end of fix floating problems*/
@@ -26,82 +24,76 @@ body{
   float: left;
 }
 
-#Stars input {
+.Stars input {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  
   width: 16px;
   height: 16px;
   position: absolute;
   z-index: 0;
 }
 
-#Stars input:checked ~ label {
+.Stars input:checked ~ label {
   background: url(img/star-select.png) no-repeat;
  }
 
-#Stars label {
+.Stars label {
   height: 16px;
   width: 16px;
   float: right;
   cursor: url("img/mouse.png"), auto;
   margin-right: 2px;
-  
   position: relative;
   z-index: 1;
 }
 
-#Stars label:hover, #Stars label:hover ~ label {
+.Stars label:hover, .Stars label:hover ~ label {
   background: url(img/star-select.png) no-repeat;
 }
 
-#Stars #star-0 {
-  left: 0px;
+.Stars #star-0 {
+  left: 0;
 }
-#Stars #star-1 {
+.Stars #star-1 {
   left: 18px;
 }
-#Stars #star-2 {
+.Stars #star-2 {
   left: 36px;
 }
-#Stars #star-3 {
+.Stars #star-3 {
   left: 54px;
 }
-#Stars #star-4 {
+.Stars #star-4 {
   left: 72px;
 }
 
-
-
-
 /*стиль  для кнопки*/
-a{
-	text-decoration: none;
-	cursor: url("img/mouse.png"), auto;
+a {
+  text-decoration: none;
+  cursor: url("img/mouse.png"), auto;
 }
 
-a.button1{
-	cursor: url("img/mouse.png"), auto;
-	display: inline-block;
-    text-decoration: none;
-    outline: none;
-    width: 82px;
-    height: 21px;
-    text-align: center;
-    margin: 134px -64px 0px -64px;
-    padding: 1px 1px;
-    background: url(img/button-normal.png) no-repeat center;
-	color: black;
-   font-family: Verdana Arial "MS Sans Serif";
-   font-size: 11pt;
-
-	 
-}
+a.button1 {
+  cursor: url("img/mouse.png"), auto;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  width: 82px;
+  height: 21px;
+  text-align: center;
+  margin: 134px -64px 0 -64px;
+  padding: 1px 1px;
+  background: url(img/button-normal.png) no-repeat center;
+  color: black;
+  font-family: Verdana Arial "MS Sans Serif";
+  font-size: 11pt;
+  }
 a.button1:hover {
   background: url(img/button-hover.png) no-repeat center;
  }
+
 a.button1:active {
   background: url(img/button-pressed.png) no-repeat center;
- }
+}
 
 
